@@ -5,21 +5,21 @@
 class Flux < Formula
   desc "🚀 The fastest way to build full-stack applications with Go + TypeScript"
   homepage "https://github.com/barisgit/goflux"
-  version "0.1.10"
+  version "0.1.12"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/barisgit/goflux/releases/download/v0.1.10/flux_0.1.10_darwin_amd64.tar.gz"
-      sha256 "fd342747cd971366e50c4c6c6508077d3332ccb62f75d7af9e1524857ede4cd3"
+      url "https://github.com/barisgit/goflux/releases/download/v0.1.12/flux_0.1.12_darwin_amd64.tar.gz"
+      sha256 "62c9d9dbfbd7b077637ccb5d0d97e7dfe74736040596b1619dbd43c9301d7780"
 
       def install
         bin.install "flux"
       end
     end
     on_arm do
-      url "https://github.com/barisgit/goflux/releases/download/v0.1.10/flux_0.1.10_darwin_arm64.tar.gz"
-      sha256 "67ae351b0d978be4208f572d56a984a857b70598a966af1659c58a10a53fba3a"
+      url "https://github.com/barisgit/goflux/releases/download/v0.1.12/flux_0.1.12_darwin_arm64.tar.gz"
+      sha256 "63d4239c3869e76d2f66bdce67709058f5221be279bedef353a0a2123d03b5ed"
 
       def install
         bin.install "flux"
@@ -30,8 +30,8 @@ class Flux < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/barisgit/goflux/releases/download/v0.1.10/flux_0.1.10_linux_amd64.tar.gz"
-        sha256 "7e5a87eea2aced0515b2b4d068891b69bd5699cc1d1fafbb518b72cccb3ec64f"
+        url "https://github.com/barisgit/goflux/releases/download/v0.1.12/flux_0.1.12_linux_amd64.tar.gz"
+        sha256 "4c4740184ada9e4bbc80181743ce6a7d43754232c04bfe8d968dca9f8fbf0f7a"
 
         def install
           bin.install "flux"
@@ -40,8 +40,8 @@ class Flux < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/barisgit/goflux/releases/download/v0.1.10/flux_0.1.10_linux_arm64.tar.gz"
-        sha256 "0d9343cac791fc5c529b70d14883158bae7f8e304e16c3a720551526f1dba49c"
+        url "https://github.com/barisgit/goflux/releases/download/v0.1.12/flux_0.1.12_linux_arm64.tar.gz"
+        sha256 "78976b3bd0b3054173f8ef833b1e293382e375b6ef4c574eedfd47a4bb6d316e"
 
         def install
           bin.install "flux"
